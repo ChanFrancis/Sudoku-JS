@@ -8,4 +8,5 @@ At the left, you have the message box, giving you some indication of your mistak
 This code doesn't require any other components, you can download as is and run the html.
 <br> 
 Visualize the game here : https://sudoku-js-chx6.onrender.com/ <br> <br>
+Answer
 <img src="https://github.com/ChanFrancis/Sudoku-JS/assets/108381402/cfd5aa13-acbe-4e58-b344-62dbdfec9bc4">
