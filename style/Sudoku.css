@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    overflow: scroll;
+}
+
+hr {
+    width: 25%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    background-color:  rgb(112, 89, 196);
+    color: white;
+    padding: 10px 0 5px;
+    margin-bottom: 30px;
+    letter-spacing: .15rem;
+}
+
+/* Table */
+#sudoku {
+    display: flex;
+    justify-content: center;
+}
+
+table,
+th,
+td {
+    border: 1.5px solid black;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border: rgb(112, 89, 196) 4px solid;
+    box-shadow: rgb(112, 89, 196) -3px 5px 10px 1px;
+}
+
+.right_border {
+    border-right: 2.5px solid rgb(112, 89, 196);
+}
+
+.bottom_border {
+    border-bottom: 2.5px solid rgb(112, 89, 196);
+}
+
+.value {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.829);
+}
+
+.empty {
+    color: blue !important;
+    transition: all ease-out 0.2s;
+}
+
+.empty:active {
+    box-shadow: inset 0px 0px 9px 3px rgba(0,0,0,0.45);
+}
+
+/* Content zone */
+.PageContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.messagesBloc {
+    height: 400px;
+    width: 300px;
+    border: 3px solid rgb(112, 89, 196);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: rgb(112, 89, 196) -3px 5px 10px 1px;
+}
+
+.messagesTitle {
+    background-color: rgb(112, 89, 196);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 35px;
+    box-sizing: border-box;
+}
+
+#Messages {
+    font-size: 1.25rem;
+    margin: 1rem 0 1rem 1rem;
+    padding-right: 1rem;
+    width: auto;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100%;
+}
+
+#numberedButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    flex-wrap: wrap;
+    height: auto;
+    border: 2px solid black;
+    background-color: lightgray;
+}
+
+div[class^='button-'] {
+    width: 33.33%;
+    box-sizing: border-box;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    font-size: 2.5rem;
+    box-shadow: inset 3px -1px 9px 6px rgba(0,0,0,0.65);
+    transition: all ease-out 0.02s;
+}
+
+div[class^='button-']:active {
+    box-shadow: inset 1px 0px 9px 6px rgba(0,0,0,0.55);
+    font-size: 2.25rem;
+}
+
+#remove {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    background-color: lightcoral;
+    transition: all ease-out 0.01s;
+}
+
+#remove:active {
+    box-shadow: inset 0px 0px 9px 3px rgb(235, 74, 74);
+    font-size: 1.35rem;
+}
+
+#verify {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid green;
+    font-size: 1.5rem;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: wheat;
+    transition: all ease-out 0.01s;
+}
+
+#verify:active {
+    box-shadow: inset 0px 0px 9px 3px rgb(236, 196, 120);
+    font-size: 1.35rem;
+}
+
+#verify:hover {
+    transform: scale(1.05);
+}
+
+.Selected {
+    box-shadow: inset 0px 0px 7px 1px rgba(0,0,0,0.4);
+}
