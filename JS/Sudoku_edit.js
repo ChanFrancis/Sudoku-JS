@@ -1,4 +1,5 @@
 var editableContent = document.querySelectorAll(".empty");
+var NumberBox = document.getElementById("numberedButton");
 var clickedElement = "";
 
 // Une fois cette variable "false", ne plus lancer le code
@@ -20,18 +21,19 @@ editableContent.forEach(content => {
         }
 
         content.classList.add("Selected");
+        NumberBox.classList.add("Activate");
     });
 });
 
 // Remove the Select animation if the user click outside the table or the Number pad
 document.body.addEventListener("click", (event)=> { 
-    var NumberBox = document.getElementById("numberedButton");
     var NumberBoxClicked = NumberBox.contains(event.target);
     var sudokuTableClicked = sudokuTable.contains(event.target);
     var Selected = document.querySelector(".Selected")
 
     if(Selected && !NumberBoxClicked && !sudokuTableClicked) {
         Selected.classList.remove("Selected")
+        NumberBox.classList.remove("Activate");
         clickedElement = ""
     }
 }) 

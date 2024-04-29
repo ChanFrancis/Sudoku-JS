@@ -1,6 +1,6 @@
 var sudokuTable = document.getElementById('sudoku');
 
-// Create a loop for our 2 dimensionnals table
+// Create a loop for our 2 dimensional table
 let to_verify = [];
 for (i = 0; i < 9; i++) {
     to_verify.push(Array(9));
