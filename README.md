@@ -1,6 +1,6 @@
 # Sudoku-JS
 <br>
-Sudoku game coded with JS, HTML and CSS.
+Sudoku game coded mainly with JS.
 You have the 9x9 table at the center and a pad next by where you can insert your number into the empty square. The table contains 9 small 3x3 table delimited by the purple line called region. <br>
 Each line, column and region should contain the number 1 to 9 without duplication. You can check if you've made some mistake by clicking on "Check Sudoku", it will highligt them for you. <br>
 At the left, you have the message box, giving you some indication of your mistake (if any) when clicking on "Check Sudoku". <br>
