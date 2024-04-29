@@ -3,6 +3,7 @@ body {
     padding: 0;
     background-color: aliceblue;
     overflow: scroll;
+	height: 98vh;
 }
 
 hr {
