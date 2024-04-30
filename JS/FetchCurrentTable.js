@@ -20,7 +20,7 @@ function TableLine(table) {
             var line = i + 1
 
             // In case of error, show the error and send the message
-            var styleError = ".sudoku_table tr:nth-child("+ line +") { color: red; background-color: gray;}"
+            var styleError = ".sudoku_table tr:nth-child("+ line +") { color: red; background-color: lightgray;}"
             var Error = ("<div>There is an issue on the line " + line + ".</div>")
 
             style.innerText += styleError;
@@ -56,7 +56,7 @@ function TableColumn(table) {
         i++;
 
         var Error = "<div>There is an issue on the column " + i + ".</div>"
-        var styleError = ".sudoku_table tr td:nth-child("+ i +") { color: red; background-color: gray;}"
+        var styleError = ".sudoku_table tr td:nth-child("+ i +") { color: red; background-color: lightgray;}"
 
         if (!Column_result) {
             style.innerText += styleError;

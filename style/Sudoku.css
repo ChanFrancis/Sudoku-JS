@@ -41,6 +41,7 @@ td {
 table {
     border: rgb(112, 89, 196) 4px solid;
     box-shadow: rgb(112, 89, 196) -3px 5px 10px 1px;
+    background-color: rgb(218, 231, 255);
 }
 
 .right_border {
@@ -59,8 +60,6 @@ table {
     justify-content: center;
     font-size: 2.5rem;
     font-weight: 500;
-    background-color: rgb(218, 231, 255);
-
 }
 
 .empty {
